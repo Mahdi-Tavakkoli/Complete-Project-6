@@ -23,7 +23,7 @@
 
 nav{
     .active{
-        color: #FF7777 !important;
+        color: $color-primary !important;
     }
 }
 
@@ -34,11 +34,60 @@ nav{
 }
 
 .btn-navbar:hover{
-    background-color: #FF7777;
-    border-color: #FF7777;
+    background-color: $color-primary;
+    border-color: $color-primary;
     color: white;
 }
 
 .bg-main{
     background-color: #202040;
+}
+
+.nav-item-2{
+    position: relative;
+}
+
+.nav-item-2 a:hover+ul , .nav-item-2 ul:hover{
+    display: block;
+}
+
+.nav-item-2 ul{
+    display: none;
+    position: absolute;
+    width: 150%;
+    background-color: white;
+    top: 100%;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.nav-item-2 ul li{
+    margin-left: 10px;
+    padding: 5px 0;
+}
+
+.nav-item-2 ul li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.nav-item-2 ul li a:hover{
+    color: $color-primary;
+}
+
+.m-btn-submenu:hover + .m-submenu , .m-submenu:hover{
+    display: list-item;
+}
+
+.m-submenu{
+    display: none;
+    position: absolute;
+    width: 100% !important;
+    background-color: white;
+    left: 100%;
+    margin-top: -40%;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 0;
 }
