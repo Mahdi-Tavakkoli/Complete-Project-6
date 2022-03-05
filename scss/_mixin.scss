@@ -1,0 +1,13 @@
+@mixin animation($params...) {
+    animation: $params;
+    -o-animation: $params;
+    -moz-animation: $params;
+    -webkit-animation: $params;
+}
+
+@mixin transition($params...) {
+    transition: $params;
+    -o-transition: $params;
+    -moz-transition: $params;
+    -webkit-transition: $params;
+}
