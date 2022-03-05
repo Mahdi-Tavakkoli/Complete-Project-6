@@ -4,6 +4,7 @@
 @import "./mixin";
 @import "./header";
 @import "./features";
+@import "./coment";
 
 // Base Style
 *{
@@ -18,4 +19,11 @@ body{
 
 .text-main{
     color: $color-primary;
+}
+
+.btn-prevNext{
+    background-color: white;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-size: 1.1rem;
 }

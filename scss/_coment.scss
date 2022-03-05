@@ -1,0 +1,15 @@
+.img-responsive{
+    width: 100% !important;
+}
+
+@media screen and (max-width:575px) {
+    .img-responsive{
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width:363px) {
+    .img-responsive{
+        width: 80% !important;
+    }
+}
