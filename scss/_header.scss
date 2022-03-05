@@ -1,12 +1,13 @@
 .custom-shape-divider-bottom-1646455565 {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
     background-color: #202040;
+    border: 0;
 }
 
 .custom-shape-divider-bottom-1646455565 svg {
@@ -15,6 +16,7 @@
     width: calc(100% + 1.3px);
     height: 208px;
     transform: rotateY(180deg);
+    stroke: none;
 }
 
 .custom-shape-divider-bottom-1646455565 .shape-fill {
@@ -125,4 +127,22 @@ nav{
         top: 100%;
         opacity: 1;
     }
+}
+
+.btn-main{
+    background-color: $color-primary;
+    color: white;
+}
+.btn-main:hover{
+    color: white;
+    background-color: darken($color: $color-primary, $amount: 6);
+}
+.m-py-form{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+}
+
+.m-input:focus{
+    box-shadow: none;
 }
