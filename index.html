@@ -8,17 +8,63 @@
 
     <!-- Bootstrap.min.css File -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
+
     <!-- Bootstrap-icons.css File -->
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    
+
     <!-- main.min.css File -->
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Project | Home</title>
 </head>
 
 <body>
+    <header class="bg-main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent px-5 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder" href="index.html">Easy</a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <!-- Item 1 -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <!-- Item 2 -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Dropdown</a>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown">
+                                Inner Page
+                            </a>
+                        </li>
+
+                        <!-- Item 4 -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-navbar rounded-pill px-3">Free Templates</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="custom-shape-divider-bottom-1646455565 bg-danger">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </header>
 </body>
 <!-- Bootstrap.bundle.min.js File -->
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
