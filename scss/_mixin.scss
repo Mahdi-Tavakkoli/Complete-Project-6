@@ -5,9 +5,17 @@
     -webkit-animation: $params;
 }
 
-@mixin transition($params...) {
-    transition: $params;
-    -o-transition: $params;
-    -moz-transition: $params;
-    -webkit-transition: $params;
+@mixin transition($params2...) {
+    transition: $params2;
+    -o-transition: $params2;
+    -moz-transition: $params2;
+    -webkit-transition: $params2;
+}
+
+@mixin transform($params3...) {
+    transform: $params3;
+    -o-transform: $params3;
+    -moz-transform: $params3;
+    -webkit-transform: $params3;
+    -ms-transform-origin: $params3;
 }

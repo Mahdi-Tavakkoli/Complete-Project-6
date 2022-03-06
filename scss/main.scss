@@ -26,4 +26,18 @@ body{
     border: 2px solid $color-primary;
     color: $color-primary;
     font-size: 1.1rem;
+    @include transition(transform 100ms)
+}
+
+.btn-prevNext:hover{
+    background-color: $color-primary;
+    color: white;
+}
+
+.btn-prevNext:active{
+    @include transform(scale(.9))
+}
+
+.btn-prevNext:focus{
+    box-shadow: none;
 }
