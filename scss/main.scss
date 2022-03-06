@@ -41,3 +41,29 @@ body{
 .btn-prevNext:focus{
     box-shadow: none;
 }
+
+.bg-main2{
+    background-color: $color-primary
+}
+
+.custom-control-input{
+    width: 4rem !important;
+    background-color: transparent;
+    padding: 15px 0;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-image: url("../images/customized\ switch.svg") !important;
+}
+
+
+.custom-control-input:checked{
+    background-color: transparent;
+    border-color: $color-primary;
+    background-image: url("../images/result.svg");
+}
+
+
+.custom-control-input:checked , .custom-control-input:focus{
+    border-color: $color-primary;
+    box-shadow: none;
+}
