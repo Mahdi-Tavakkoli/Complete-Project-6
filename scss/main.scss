@@ -7,63 +7,95 @@
 @import "./coment";
 
 // Base Style
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #f2f5f9;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.text-main{
-    color: $color-primary;
+body {
+  background-color: #f2f5f9;
+  font-family: "Montserrat", sans-serif;
 }
 
-.btn-prevNext{
-    background-color: white;
-    border: 2px solid $color-primary;
-    color: $color-primary;
-    font-size: 1.1rem;
-    @include transition(transform 100ms)
+.text-main {
+  color: $color-primary;
 }
 
-.btn-prevNext:hover{
-    background-color: $color-primary;
-    color: white;
+.btn-prevNext {
+  background-color: white;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  font-size: 1.1rem;
+  @include transition(transform 100ms);
 }
 
-.btn-prevNext:active{
-    @include transform(scale(.9))
+.btn-prevNext:hover {
+  background-color: $color-primary;
+  color: white;
 }
 
-.btn-prevNext:focus{
-    box-shadow: none;
+.btn-prevNext:active {
+  @include transform(scale(0.9));
 }
 
-.bg-main2{
-    background-color: $color-primary
+.btn-prevNext:focus {
+  box-shadow: none;
 }
 
-.custom-control-input{
-    width: 4rem !important;
-    background-color: transparent;
-    padding: 15px 0;
-    border: 1px solid $color-primary;
-    color: $color-primary;
-    background-image: url("../images/customized\ switch.svg") !important;
+.bg-main2 {
+  background-color: $color-primary;
+}
+
+.custom-control-input {
+  width: 4rem !important;
+  background-color: transparent;
+  padding: 15px 0;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  background-image: url("../images/customized\ switch.svg") !important;
+}
+
+.custom-control-input:checked {
+  background-color: transparent;
+  border-color: $color-primary;
+  background-image: url("../images/result.svg");
+}
+
+.custom-control-input:checked,
+.custom-control-input:focus {
+  border-color: $color-primary;
+  box-shadow: none;
+}
+
+.card-hover {
+  @include transition(box-shadow 300ms, transform 300ms);
+}
+.card-hover:hover {
+  box-shadow: 0 0 30px #d4d4d4;
+  @include transform(scale(1.03));
+}
+
+.m-card {
+  overflow: hidden;
+  position: relative;
 }
 
 
-.custom-control-input:checked{
-    background-color: transparent;
-    border-color: $color-primary;
-    background-image: url("../images/result.svg");
+@media screen and (min-width:1000px) {
+    .popular {
+        width: 50%;
+        display: inline-flex;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 5%;
+        // right: 60%;
+        left: -14%;
+        color: white;
+        justify-content: center;
+    }
 }
-
-
-.custom-control-input:checked , .custom-control-input:focus{
-    border-color: $color-primary;
-    box-shadow: none;
+@media screen and (max-width:1000px) {
+    .popular {
+        display: none;
+    }
 }
