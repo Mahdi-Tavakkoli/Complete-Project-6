@@ -11,13 +11,6 @@ $('.owl-carousel').owlCarousel({
     ]
 })
 
-var loadingPart = document.getElementById("loading-part");
-window.addEventListener("load",()=>{
-    loadingPart.style.display = "none";
-    document.body.style.height = "auto";
-    document.body.style.overflow = "visible"
-})
-
 var switchInput = document.getElementById("flexSwitchCheckDefault");
 var price1 = document.getElementById("price1") // 49$;
 var price2 = document.getElementById("price2") // 599$;
