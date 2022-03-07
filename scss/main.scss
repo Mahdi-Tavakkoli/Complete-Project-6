@@ -1,6 +1,7 @@
 // Font Refrence
 @import "./fonts";
 @import "./variable";
+@import "./loader";
 @import "./mixin";
 @import "./header";
 @import "./features";
@@ -17,6 +18,9 @@
 body {
   background-color: #f2f5f9;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+  height:100vh;
+  overflow:hidden;
 }
 
 .text-main {
@@ -149,4 +153,12 @@ body {
 .myStyle2 h6:nth-child(2) {
   transition: all 300ms;
   top: 200%;
+}
+
+.m-btn-menu{
+  border:none
+}
+
+.m-btn-menu span{
+  font-size: 2rem;
 }

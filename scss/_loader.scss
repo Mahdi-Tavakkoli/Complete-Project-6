@@ -1,0 +1,83 @@
+
+@keyframes ldio-kff57nmerln-1 {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(-45deg) }
+  100% { transform: rotate(0deg) }
+}
+@keyframes ldio-kff57nmerln-2 {
+    0% { transform: rotate(180deg) }
+   50% { transform: rotate(225deg) }
+  100% { transform: rotate(180deg) }
+}
+.ldio-kff57nmerln > div:nth-child(2) {
+  transform: translate(-15px,0);
+}
+.ldio-kff57nmerln > div:nth-child(2) div {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 60px;
+  border-radius: 120px 120px 0 0;
+  background: #ff4f4f;
+  animation: ldio-kff57nmerln-1 1s linear infinite;
+  transform-origin: 60px 60px
+}
+.ldio-kff57nmerln > div:nth-child(2) div:nth-child(2) {
+  animation: ldio-kff57nmerln-2 1s linear infinite
+}
+.ldio-kff57nmerln > div:nth-child(2) div:nth-child(3) {
+  transform: rotate(-90deg);
+  animation: none;
+}@keyframes ldio-kff57nmerln-3 {
+    0% { transform: translate(190px,0); opacity: 0 }
+   20% { opacity: 1 }
+  100% { transform: translate(70px,0); opacity: 1 }
+}
+.ldio-kff57nmerln > div:nth-child(1) {
+  display: block;
+}
+.ldio-kff57nmerln > div:nth-child(1) div {
+  position: absolute;
+  top: 92px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: ldio-kff57nmerln-3 1s linear infinite
+}
+.ldio-kff57nmerln > div:nth-child(1) div:nth-child(1) { animation-delay: -0.67s }
+.ldio-kff57nmerln > div:nth-child(1) div:nth-child(2) { animation-delay: -0.33s }
+.ldio-kff57nmerln > div:nth-child(1) div:nth-child(3) { animation-delay: 0s }
+.loadingio-spinner-bean-eater-mvxdaf8q35 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-kff57nmerln {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-kff57nmerln div { box-sizing: content-box; }
+
+.loading-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: $color-secondary;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    flex-direction: column;
+}
