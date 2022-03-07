@@ -1,0 +1,28 @@
+.footer-item a{
+    color: black;
+    text-decoration: none;
+    @include transition(color 300ms)
+}
+
+.footer-item{
+    margin: 10px 0;
+}
+
+.footer-item a:hover{
+    color: $color-primary;
+}
+
+.footer-icon{
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+    display: inline-flex;
+    padding: 13px;
+    border-radius: 10px;
+    margin: 0px 10px 0 0;
+    @include transition(color 200ms);
+}
+
+.footer-icon:hover{
+    color: $color-primary;
+}
