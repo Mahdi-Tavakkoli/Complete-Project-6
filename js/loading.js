@@ -4,5 +4,5 @@ window.addEventListener("load", () => {
         loadingPart.style.display = "none";
         document.body.style.height = "auto";
         document.body.style.overflow = "visible";
-    }, 1000)
+    }, 500)
 })

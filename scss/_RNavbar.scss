@@ -1,0 +1,14 @@
+.r-nav-item{
+    margin: 10px 0;
+    a{
+        text-decoration: none;
+        color: white;
+        @include transition(color 300ms);
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
+.active a{
+    color: $color-primary;
+}
