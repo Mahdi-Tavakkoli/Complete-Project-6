@@ -158,10 +158,13 @@ body {
   top: 200%;
 }
 
-.m-btn-menu{
-  border:none
+.m-btn-menu:focus{
+  box-shadow: none;
 }
-
+.m-btn-menu{
+  border: none;
+}
 .m-btn-menu span{
   font-size: 2rem;
+  color: $color-primary ;
 }
