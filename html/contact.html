@@ -39,6 +39,150 @@
         </div>
         <h3 class="text-white">Loading...</h3>
     </div>
+
+    <!-- Header - Contain Navbar , Content -->
+    <header class="bg-main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent px-lg-5 px-4 py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bolder" href="../index.html">Easy</a>
+                <button class="navbar-toggler m-btn-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <!-- Item 1 -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <!-- Item 2 -->
+                        <li class="nav-item nav-item-2 mx-2">
+                            <a class="nav-link nav-link-2" href="#">
+                                Dropdown
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="m-dropdown-menu">
+                                <li><a href="#">Menu One</a></li>
+                                <li>
+                                    <a href="#" class="m-btn-submenu">
+                                        Menu Two
+                                        <i class="bi bi-chevron-right ms-5 ps-3"></i>
+                                    </a>
+                                    <ul class="m-submenu">
+                                        <li><a href="#">Sub Menu One</a></li>
+                                        <li><a href="#">Sub Menu Two</a></li>
+                                        <li><a href="#">Sub Menu Three</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Menu Three</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Item 3 -->
+                        <li class="nav-item mx-2 dropdown">
+                            <a class="nav-link" href="./inner.html" id="navbarDropdown">
+                                Inner Page
+                            </a>
+                        </li>
+
+                        <!-- Item 4 -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-navbar rounded-pill px-3">Free Templates</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid pt-5">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="row gy-5 justify-content-center align-items-center">
+                            <div class="col-sm-12 col-lg-10">
+                                <div>
+                                    <h1 class="text-white fw-bolder">Contact Us</h1>
+                                    <p class="text-white fs-6 my-4 py-3">
+                                        Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia,
+                                        there live the blind texts. Separated they live.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 d-flex justify-content-center user-select-none align-items-center">
+                        <img src="../images/header.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-relative">
+            <div class="custom-shape-divider-bottom-1646455565 bg-main border-0 bg-white">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="bg-main" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Responsive Navbar -->
+    <div class="offcanvas offcanvas-start bg-main" tabindex="-1" id="offcanvasExample">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="text-white btn bg-transparent" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="list-unstyled">
+                    <!-- Item 1 -->
+                    <li class="r-nav-item"><a href="../index.html">Home</a></li>
+                    
+                    <!-- Item 2 -->
+                    <li class="r-nav-item">
+                        <a data-bs-toggle="collapse" href="#collapseExample">
+                            Dropdown
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="border-start list-unstyled ps-4">
+                                <li class="r-nav-item"><a href="#">Menu One</a></li>
+                                <li class="r-nav-item">
+                                    <a data-bs-toggle="collapse" href="#collapseExample2">
+                                        Menu Two
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <div class="collapse" id="collapseExample2">
+                                        <div>
+                                            <ul class="border-start list-unstyled ps-4">
+                                                <li class="r-nav-item"><a href="#">Sub Menu One</a></li>
+                                                <li class="r-nav-item"><a href="#">Sub Menu Two</a></li>
+                                                <li class="r-nav-item"><a href="#">Sub Menu Three</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="r-nav-item"><a href="#">Menu Three</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Item 3 -->
+                    <li class="r-nav-item"><a href="./inner.html">Inner Page</a></li>
+                    
+                    <!-- Item 4 -->
+                    <li class="r-nav-item active"><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- Bootstrap.bundle.min.js File -->
