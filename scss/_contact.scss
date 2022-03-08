@@ -1,0 +1,28 @@
+.m-form{
+    border: 2px solid #eeeeee;
+    padding: 10px 10px;
+}
+
+.m-form:focus{
+    box-shadow: none;
+    border: 2px solid $color-primary;
+}
+
+.btn-main-send{
+    padding: 11px 10px;
+}
+
+.m-form-check-input{
+    border: 2px solid #eeeeee;
+    width: 20px;
+    height: 20px;
+}
+.m-form-check-input:checked{
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    box-shadow: none;
+}
+
+.m-form-check-input:focus{
+    box-shadow: none;
+}
