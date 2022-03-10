@@ -168,3 +168,26 @@ body {
   font-size: 2rem;
   color: $color-primary ;
 }
+
+.focus-input:focus{
+  box-shadow: none;
+}
+
+@media screen and (max-width:389px) {
+  .custom-control-input {
+    width: 3rem !important;
+    background-color: transparent;
+    padding: 15px 0;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-image: url("../images/customized\ switch.svg") !important;
+  }
+
+  .fs-res{
+    font-size: .8rem;
+  }
+
+  .fs-res2{
+    display: none !important;
+  }
+}
